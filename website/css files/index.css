@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        form {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label, input, textarea, select {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button[type="reset"] {
+            background-color: #ccc;
+            color: #000;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <label for="personName">Name:</label>
+            <input type="text" id="personName" name="personName" required>
+
+            <label for="dateOfBirth">Date of Birth:</label>
+            <input type="text" id="dateOfBirth" name="dateOfBirth" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label>Qualification:</label>
+            <input type="radio" id="qualificationMasters" name="qualification" value="Masters">
+            <label for="qualificationMasters">Masters</label>
+            <input type="radio" id="qualificationBachelor" name="qualification" value="Bachelor">
+            <label for="qualificationBachelor">Bachelor</label>
+            <input type="radio" id="qualificationDiploma" name="qualification" value="Diploma">
+            <label for="qualificationDiploma">Diploma</label>
+
+            <label>Languages:</label>
+            <input type="checkbox" id="languageEnglish" name="languages" value="English">
+            <label for="languageEnglish">English</label>
+            <input type="checkbox" id="languageFrench" name="languages" value="French">
+            <label for="languageFrench">French</label>
+            <input type="checkbox" id="languageHindi" name="languages" value="Hindi">
+            <label for="languageHindi">Hindi</label>
+            <input type="checkbox" id="languageArabic" name="languages" value="Arabic">
+            <label for="languageArabic">Arabic</label>
+
+            <label for="position">Position Applying For:</label>
+            <select id="position" name="position">
+                <option value="Manager">Manager</option>
+                <option value="Engineer">Engineer</option>
+                <option value="Accountant">Accountant</option>
+                <option value="Developer">Developer</option>
+                <option value="Designer">Designer</option>
+                <option value="TechnicalLead">Technical Lead</option>
+            </select>
+
+            <label for="aboutYourself">Tell us about yourself:</label>
+            <textarea id="aboutYourself" name="aboutYourself" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+</html>
